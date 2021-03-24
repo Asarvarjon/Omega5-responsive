@@ -23,9 +23,29 @@ ul {
 
 header {
     padding: 20px;
-    background-image: url(./img/back.png);
+    background-image: url(./img/backbit.png),
+        radial-gradient(100% 100% at 50% 0%, #504A93 0%, #413E65 100%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 800px, cover;
+    background-position-x: right, center;
+    background-position-y: 100%, center;
+}
+
+.bar-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-sec {
+    width: 30px;
+    height: 6px;
+    background-color: rgb(119, 118, 116);
+    margin: 2px 0px;
+    border-radius: 3px;
+}
+
+.later {
+    display: none;
 }
 
 .nav-title {
@@ -85,11 +105,15 @@ nav {
     text-decoration: underline;
 }
 
+.header-info-box {
+    width: 50%;
+}
+
 .header-title {
-    padding: 0px 0px 0px 120px;
+    padding: 0px 0px 0px 0px;
     margin: 120px 0px 0px 0px;
-    font-size: 54px;
-    line-height: 70px;
+    font-size: 80px;
+    line-height: 84px;
     letter-spacing: -2.50105px;
     color: #FFFFFF;
 
@@ -97,7 +121,7 @@ nav {
 
 .header-text {
     margin: 15px 0px;
-    padding-left: 120px;
+    padding-left: 0px;
     font-size: 21px;
     line-height: 39px;
     letter-spacing: -0.656526px;
@@ -112,7 +136,7 @@ nav {
     letter-spacing: -0.656526px;
     color: #FFFFFF;
     margin: 30px 0px 15px 0px;
-    margin-left: 120px;
+    margin-left: 0px;
     padding: 15px;
     text-decoration: none;
     background-color: #F0544C;
@@ -125,7 +149,7 @@ nav {
 }
 
 .header-down-text {
-    margin-left: 120px;
+    margin-left: 0px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: -0.437684px;
@@ -135,15 +159,16 @@ nav {
 }
 
 main {
-    padding: 80px 0px 100px 200px;
+    padding: 80px 0px 100px 0px;
 }
 
 .main-info {
     display: flex;
+    justify-content: space-around;
 }
 
 .main-thing {
-    width: 30%;
+    width: 26%;
 }
 
 .main-title {
@@ -165,6 +190,7 @@ main {
     padding: 80px 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
 }
 
@@ -188,10 +214,15 @@ main {
 
 }
 
+
 .chat-section .container {
     display: flex;
     flex-direction: column;
-    padding: 70px 0px 130px 100px;
+    padding: 70px 0px 130px 0px;
+}
+
+.chat-section-info-box {
+    width: 50%;
 }
 
 .chat-section-title {
@@ -235,8 +266,12 @@ main {
 
 .device-box .container {
     display: flex;
-    padding: 120px 0px 60px 80px;
+    padding: 120px 0px 60px 0px;
     justify-content: space-between;
+}
+
+.device-image {
+    margin-right: 10px;
 }
 
 .device-box-info {
@@ -275,7 +310,7 @@ main {
     line-height: 25px;
     letter-spacing: -0.656526px;
     color: #19191B;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px 20px 0px;
 
 }
 
@@ -291,7 +326,7 @@ main {
 .customers-section .container {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    padding-left: 0px;
 }
 
 .customers-section-title {
@@ -320,10 +355,11 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 52px 54px rgba(65, 62, 101, 0.102519);
     border-radius: 10px;
-    margin: 40px 0px 50px 90px;
+    margin: 40px 0px 50px 20px;
 }
 
 .customer-image-info {
+    width: 50%;
     margin-left: 80px;
     margin-top: 50px;
     text-align: center;
@@ -411,7 +447,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0px 60px 80px;
+    padding: 120px 0px 60px 0px;
 }
 
 .last-section-title {
@@ -577,7 +613,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
+    padding-left: 0px;
 }
 
 .questions-list {
@@ -656,12 +692,13 @@ main {
     letter-spacing: -0.437684px;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 10px;
+    margin-left: -70px;
 }
 
 footer .container {
     display: flex;
     padding: 100px 0px;
-    padding-left: 80px;
+    padding-left: 0px;
 
 
 }
@@ -727,7 +764,7 @@ footer .container {
 }
 
 .footer-sub-item {
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .footer-sub-link {
@@ -748,5 +785,505 @@ footer .container {
     line-height: 38px;
     letter-spacing: -0.500211px;
     color: #5454D4;
+
+}
+
+
+
+@media (max-width:1160px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .container {
+        width: 900px;
+    }
+
+    .main-thing {
+        margin-left: 25px;
+    }
+
+    .chat-section {
+        background-size: 500px;
+    }
+
+    .questions-section-link {
+        margin-left: 300px;
+    }
+
+    header {
+        background-position-x: 200%, center;
+    }
+
+    .header-title {
+        font-size: 54px;
+    }
+
+}
+
+
+@media (max-width:920px) {
+    .container {
+        width: 800px;
+    }
+
+
+    header {
+        background-position-x: 550%, center;
+    }
+
+    .header-title {
+        font-size: 54px;
+    }
+
+    .chat-section {
+        background-position-x: right;
+        background-size: 500px;
+    }
+
+    .chat-section .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .chat-section-title,
+    .device-box-title {
+        font-size: 50px;
+    }
+
+    .chat-section-text,
+    .device-box-text {
+        font-size: 19px;
+    }
+
+    .two-boxes-section .container {
+        padding-left: 40px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .question-title {
+        font-size: 21px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    .questions-section-title {
+        font-size: 40px;
+    }
+
+    .questions-section-info {
+        width: 70%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .questions-section-link {
+        margin-left: 260px;
+    }
+
+}
+
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+    }
+
+    header {
+        background-position-x: 140px, center;
+        background-size: 750px, cover;
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .header-text {
+        font-size: 19px;
+    }
+
+    .main-thing {
+        width: 30%;
+        align-items: flex-start;
+    }
+
+    .companies-list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .company-link {
+        width: 45%;
+        margin: 15px 0px;
+    }
+
+    .chat-section {
+        background-position-x: right;
+        background-size: 400px;
+    }
+
+
+    .chat-section-title,
+    .device-box-title,
+    .last-section-title {
+        font-size: 40px;
+    }
+
+    .chat-section-text,
+    .device-box-text,
+    .last-section-text {
+        font-size: 19px;
+    }
+
+    .customers-section-title {
+        font-size: 40px;
+
+    }
+
+    .customers-section-text {
+        font-size: 19px;
+    }
+
+    .last-section-text {
+        width: 70%;
+    }
+
+    .two-boxes-section .container {
+        margin-left: 0px;
+    }
+
+    .box {
+        width: 48%;
+    }
+
+    .advantage-item {
+        padding-left: 5px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width:720px) {
+    .container {
+        width: 600px;
+    }
+
+    header {
+        background-image: none;
+        background-color: #4E488B;
+    }
+
+    .header-info-box {
+
+        width: 80%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .main-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        margin-left: 30px;
+    }
+
+    .main-thing {
+        width: 60%;
+        padding: 15px;
+        background: white;
+        border: 1px solid #808083;
+        border-radius: 10px;
+        margin-top: 20px;
+
+    }
+
+    .icon-photo {
+        margin-top: 30px;
+    }
+
+
+    .companies-list {
+        display: none;
+    }
+
+    .chat-section {
+        background-image: none;
+    }
+
+    .chat-section-info-box {
+        width: 80%;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-section-text {
+        text-align: center;
+    }
+
+    .chat-section-title {
+        text-align: center;
+    }
+
+
+    .features-box {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .device-box .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-image {
+        width: 300px;
+        height: 450px;
+        margin-left: 100px;
+    }
+
+    .device-box-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .device-box-title {
+        text-align: center;
+    }
+
+    .device-box-text {
+        text-align: center;
+    }
+
+    .customers-image-box {
+        display: none;
+    }
+
+    .statistic-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic-name {
+        text-align: center;
+
+    }
+
+    .statistic-info {
+        width: 70%;
+        margin-left: 50px;
+
+    }
+
+    .two-boxes-section {
+        background-image: none;
+    }
+
+    .two-boxes-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .box {
+        width: 70%;
+        padding: 15px;
+        background: #FFFFFF;
+        border: 1px solid #c4c4c5;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .questions-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question-item {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #EAE9F2;
+        border-radius: 10px;
+    }
+
+    .questions-section-link {
+        margin-left: 150px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-list {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-headings {
+        width: 60%;
+    }
+
+    .footer-sub-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .footer-title {
+        margin-left: 110px;
+    }
+
+    .footer-text {
+        width: 80%;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .footer-link {
+        font-weight: bold;
+    }
+
+    .footer-sub-link {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:620px) {
+    .container {
+        width: 500px;
+    }
+
+}
+
+@media (max-width:520px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-list, .get-startes {
+        display: none;
+    }
+
+    .later {
+        display: block;
+        margin-left: 180px;
+    }
+
+    .header-info-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin: 0px;
+    }
+
+    .main-thing {
+        margin: 0px;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    .features-box {
+        margin-left: 20px;
+    }
+
+    .chat-section-text {
+        width: 100%;
+    }
+
+    .chat-image {
+        margin-left: 50px;
+    }
+
+    .statistic-item {
+        margin-left: 40px;
+    }
+
+    .two-boxes-section .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box {
+        width: 100%;
+        margin-left:  20px;
+        margin-top: 10px;
+    }
+
+    .questions-section .container {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .questions-list {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .question-item {
+        width: 100%;
+    }
+
+    .questions-section-link {
+        margin-left: 60px;
+    }
+
+    .card {
+        margin-left: 20px;
+    }
+
+    .footer-text {
+        margin-left: 20px;
+    }
+
+    .footer-title {
+        margin-left: 80px;
+    }
+
 
 }
