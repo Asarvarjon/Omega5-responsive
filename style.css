@@ -1241,7 +1241,7 @@ footer .container {
     }
 
     .statistic-item {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .two-boxes-section .container {
@@ -1275,6 +1275,7 @@ footer .container {
 
     .card {
         margin-left: 20px;
+        margin-bottom: 20px;
     }
 
     .footer-text {
@@ -1282,7 +1283,7 @@ footer .container {
     }
 
     .footer-title {
-        margin-left: 80px;
+        margin-left: 60px;
     }
 
 
