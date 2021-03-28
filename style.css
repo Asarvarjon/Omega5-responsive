@@ -106,13 +106,14 @@ nav {
 }
 
 .header-info-box {
-    width: 50%;
+    width: 55%;
 }
 
 .header-title {
+    width: 80%;
     padding: 0px 0px 0px 0px;
     margin: 120px 0px 0px 0px;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 84px;
     letter-spacing: -2.50105px;
     color: #FFFFFF;
